@@ -1,12 +1,13 @@
 
 
+
 .container{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     position: absolute;
     margin-left: 120px;
     margin-right: 120px;
-    margin-top: 200px;
+    margin-top: 100px;
     /* border: 1px solid rgb(184, 177, 177); */
     /* box-shadow: 2px 2px rgb(221, 213, 213); */
 }
@@ -28,7 +29,7 @@
 
 .row3{
     /* border: 1px solid red; */
-    margin-top: 50px;
+    margin-top: 90px;
     position: relative;
 }
 
@@ -57,8 +58,8 @@
 }
 
 #row1_div1_column1{
-    border: 1px solid rgb(184, 177, 177);
-    box-shadow: 2px 2px rgb(221, 213, 213);
+    /* border: 1px solid rgb(184, 177, 177);
+    box-shadow: 2px 2px rgb(221, 213, 213); */
 }
 
 #row1_div1_column2{
@@ -66,8 +67,8 @@
 }
 
 #row1_div2_column1{
-    border: 1px solid rgb(184, 177, 177);
-    box-shadow: 2px 2px rgb(221, 213, 213);
+    /* border: 1px solid rgb(184, 177, 177);
+    box-shadow: 2px 2px rgb(221, 213, 213); */
 }
 
 #row1_div2_column2{
@@ -75,8 +76,8 @@
 }
 
 #row2_div3_column1{
-    border: 1px solid rgb(184, 177, 177);
-    box-shadow: 2px 2px rgb(221, 213, 213);
+    /* border: 1px solid rgb(184, 177, 177);
+    box-shadow: 2px 2px rgb(221, 213, 213); */
 }
 
 #row2_div3_column2{
@@ -84,8 +85,8 @@
 }
 
 #row2_div4_column1{
-    border: 1px solid rgb(184, 177, 177);
-    box-shadow: 2px 2px rgb(221, 213, 213);
+    /* border: 1px solid rgb(184, 177, 177);
+    box-shadow: 2px 2px rgb(221, 213, 213); */
 }
 
 #row2_div4_column2{
@@ -94,17 +95,26 @@
 
 #row1_div1_column1:hover,#row1_div2_column1:hover,#row2_div3_column1:hover,#row2_div4_column1:hover{
     cursor: pointer;
-    box-shadow:5px 5px rgb(221, 213, 213);
+    border: 1px solid rgb(184, 177, 177);
+    box-shadow:5px 5px 5px 5px rgb(240, 234, 234);
 }
 
 button{
     padding: 3px;
     background-color: tomato;
     color: whitesmoke;
+    font-family: poppins;
+    font-size: 15px;
+    border-radius: 7px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow:3px 3px  rgb(58, 57, 57);
 }
 
  #removeFromCart1,#removeFromCart2,#removeFromCart3,#removeFromCart4{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 #imageURL_div1, #imageURL_div2,#imageURL_div3,#imageURL_div4{
@@ -117,16 +127,36 @@ button{
 }
 
 .cartColumn{
-    border:  1px solid blue;
+    border:  1px solid;
     margin-top: 15px;
     position: relative;
+    text-align: center;
+    background-color: tomato;
+    color: whitesmoke;
 }
 
 .cartDetails{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    
 }
 
 .cartDetailsColumn{
-    border: 1px solid red;
+    border: 1px solid;
+    margin-top: 0.5px;
+    text-align: center;
+}
+
+.cartDetailsColumn:first-child{
+    text-align: left;
+}
+
+#cartSectionNumber{
+    padding: 5px;
+    margin-left: 15px;
+    position: absolute;
+    bottom: 150px;
+    border-radius: 80px;
+    width: 50px;
+    font-size: 30px;
 }
