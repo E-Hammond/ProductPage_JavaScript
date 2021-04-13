@@ -11,7 +11,7 @@
     position: absolute;
     margin-left: 120px;
     margin-right: 120px;
-    margin-top: 80px;
+    margin-top: 40px;
     border: 1px solid  rgb(250, 124, 101);
     box-shadow: 4px 4px  rgb(250, 124, 101);
     border-radius: 5px;
@@ -153,13 +153,11 @@ button:hover{
     margin-right: 100px;
 }
 
-.product-title,.description,.price,.stock{
+.product-title,.description,.price,#stock{
     margin-top: 10px;
 }
 
-.addToCart:nth-child(2){
-    background-color: blue;
-}
+
 
 /* #product2Tag,#product4Tag{
     width: 200px;
