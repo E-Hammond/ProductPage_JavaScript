@@ -1,111 +1,85 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 .container{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr  ;
     position: absolute;
     margin-left: 120px;
     margin-right: 120px;
-    margin-top: 100px;
-    /* border: 1px solid rgb(184, 177, 177); */
-    /* box-shadow: 2px 2px rgb(221, 213, 213); */
+    margin-top: 80px;
+    border: 1px solid  rgb(250, 124, 101);
+    box-shadow: 4px 4px  rgb(250, 124, 101);
+    border-radius: 5px;
 }
 
-.row1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
+.navBar{
+    margin-top: 40px;
+    /* display: flex; */
+    /* align-items: center; */
+    border: 1px solid rgb(250, 124, 101);
     padding: 5px;
+    margin-left: 110px;
+    margin-right: 120px;
+    border-radius: 5px;
+    box-shadow: 4px 4px rgb(250, 124, 101);
 }
 
-.row2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    padding: 5px;
-    margin-top: 35px;
+.navBar ul{
+    display: flex;
+    text-align: center;
+    margin-left: 550px;
 }
 
-.row3{
-    /* border: 1px solid red; */
-    margin-top: 90px;
-    position: relative;
-}
-
-
-
-#row1-column1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#row1-column2{
-    margin-left: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#row2-column1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#row2-column2{
-    margin-left: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#row1_div1_column1{
-    /* border: 1px solid rgb(184, 177, 177);
-    box-shadow: 2px 2px rgb(221, 213, 213); */
-}
-
-#row1_div1_column2{
-    margin-left: 20px;
-}
-
-#row1_div2_column1{
-    /* border: 1px solid rgb(184, 177, 177);
-    box-shadow: 2px 2px rgb(221, 213, 213); */
-}
-
-#row1_div2_column2{
-    margin-left: 20px;
-}
-
-#row2_div3_column1{
-    /* border: 1px solid rgb(184, 177, 177);
-    box-shadow: 2px 2px rgb(221, 213, 213); */
-}
-
-#row2_div3_column2{
-    margin-left: 20px;
-}
-
-#row2_div4_column1{
-    /* border: 1px solid rgb(184, 177, 177);
-    box-shadow: 2px 2px rgb(221, 213, 213); */
-}
-
-#row2_div4_column2{
-    margin-left: 20px;
-}
-
-#row1_div1_column1:hover,#row1_div2_column1:hover,#row2_div3_column1:hover,#row2_div4_column1:hover{
+.navBar li{
+    display: inline-block;
+    margin: 0 30px;
+    text-decoration: underline;
+    font-size: 20px;
     cursor: pointer;
-    border: 1px solid rgb(184, 177, 177);
-    box-shadow:5px 5px 5px 5px rgb(240, 234, 234);
+    color: grey;
+    /* font-family: poppins; */
 }
+
+.navBar li:hover{
+    border: 1px solid tomato;
+    color: whitesmoke;
+    background-color: tomato;
+    border-radius: 5px;
+    /* padding: 5px; */
+
+}
+
+
+
+.rowcard{
+    display: grid;
+    grid-template-columns: 1fr ;
+    position: relative;
+    margin-top: 20px;
+
+    /* border: 1px solid red; */
+    /* padding: 5px; */
+}
+
+.row1-column1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 button{
-    padding: 3px;
+    padding: 4px;
     background-color: tomato;
     color: whitesmoke;
     font-family: poppins;
     font-size: 15px;
     border-radius: 7px;
+    margin-top: 15px;
 }
 
 button:hover{
@@ -113,13 +87,7 @@ button:hover{
     box-shadow:3px 3px  rgb(58, 57, 57);
 }
 
- #removeFromCart1,#removeFromCart2,#removeFromCart3,#removeFromCart4{
-    margin-left: 20px;
-}
 
-#imageURL_div1, #imageURL_div2,#imageURL_div3,#imageURL_div4{
-    margin-bottom: 10px;
-}
 
 .cartDetailsTitle{
     display: grid;
@@ -154,9 +122,47 @@ button:hover{
 #cartSectionNumber{
     padding: 5px;
     margin-left: 15px;
-    position: absolute;
-    bottom: 150px;
+    /* position: absolute;
+    bottom: 150px; */
     border-radius: 80px;
     width: 50px;
     font-size: 30px;
 }
+
+#cartSection{
+    font-size: 40px;
+}
+
+.img-container{
+    width: 250px;
+    height: 250px;
+    margin-left: 200px;
+    padding: 5px;
+}
+
+.img-container:hover{
+   border: 1px solid rgb(212, 207, 207);
+   box-shadow: 5px 5px rgb(212, 207, 207);
+   width: 300px;
+   height: 300px;
+   transition: 1;
+}
+
+.product-details{
+    margin-left: -100px;
+    margin-right: 100px;
+}
+
+.product-title,.description,.price,.stock{
+    margin-top: 10px;
+}
+
+.addToCart:nth-child(2){
+    background-color: blue;
+}
+
+/* #product2Tag,#product4Tag{
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+} */
